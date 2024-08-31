@@ -1,7 +1,7 @@
-const byteSize = (str) => {
-  // write your code here
-};
+function byteSize(str) {
+  // Create a new Blob object with the given string
+  const blob = new Blob([str]);
 
-// Do not change the code below
-const str = prompt("Enter some string.");
-alert(byteSize(str));
+  // Return the size of the Blob object, which represents the size of the string in bytes
+  return blob.size;
+}
